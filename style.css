@@ -1,0 +1,137 @@
+:root {
+  --Sof--blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  /* ### Neutral */
+  --Very--dark--blue: hsl(217, 54%, 11%);
+  --Very--dark--blue: hsl(216, 50%, 16%);
+  --Very--dark--blue: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--Very--dark--blue);
+  font-size: 18px;
+  position: relative;
+  font-family: 'Outfit', sans-serif;
+}
+.container {
+  width: 20%;
+  height: 69vh;
+  position: absolute;
+  top: 15%;
+  left: 40%;
+  border-radius: 10px;
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: 0px 10px 0 30px hsl(217, 54%, 11%);
+  padding: 20px 20px;
+}
+.img {
+    width: 270px;
+    max-height: 250px;
+    border-radius: 8px;
+  }
+.img:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    position: relative;
+}
+
+.pic-div:hover {
+    background-color: hsl(178, 100%, 50%);
+    width: 270px;
+    height: 250px;
+    position: relative;
+    /* left: 10px; */
+    /* top: 10px; */
+    border-radius: 8px;
+    background-image: url('./images/icon-view.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.middle {
+  margin: 1rem 0rem;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.493);
+}
+.middle h1 {
+  font-size: 1.2rem;
+}
+.middle h1:hover {
+    color: var(--Cyan);
+  }
+.middle p {
+  margin: 0.5rem 0rem;
+  line-height: 1.5rem;
+  opacity: 0.7;
+  font-size:1rem;
+}
+.flex-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.item1 {
+  color: var(--Cyan);
+}
+.item1,
+.item2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.footer img {
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.footer p {
+  margin-left: 1rem;
+  font-size: 0.8rem;
+  word-spacing: 0.1rem;
+}
+.footer p:hover {
+    color: var(--Cyan);
+  }
+.footer span {
+  opacity: 0.5;
+  color:white;
+}
+#ethereum,#clock{
+    padding-right: 5px;
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 80%;
+    height: 62vh;
+    position: absolute;
+    /* top: 15%; */
+    left:10%;
+    box-shadow: 0px 10px 0 25px hsl(217, 54%, 11%);
+    overflow-x:hidden;
+    overflow-y:auto;
+  }
+  .middle {
+    margin: 1rem 0rem;
+    font-size:1rem;
+  }
+  .footer p{
+      font-size:1rem;
+  }
+  .img {
+    width: 270px;
+    height: 250px;
+  }
+}
